@@ -38,9 +38,9 @@ test("correct sum", () => {
 });
 
 test("correct subtraction", () => {
-  const result = sum(5, 20);
+  const result = subtract(5, 20);
   const expected = -15;
-  // This is going to throw an error because -15 doesn't equal 25.
+  // This will not throw an error because -15 equals -15.
   expect(result).toEqual(expected);
 });
 
