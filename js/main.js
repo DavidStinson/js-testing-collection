@@ -14,6 +14,7 @@ function sum(numA, numB) {
 }
 
 function subtract(numA, numB) {
+  // This function is correct
   return numA - numB
 }
 
