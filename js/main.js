@@ -18,18 +18,6 @@ function subtract(numA, numB) {
   return numA - numB
 }
 
-async function test(description, callback) {
-  try {
-    await callback();
-    // this line executes if the callback didn't throw an error
-    console.log(`👍 ${description}`);
-  } catch (error) {
-    // if there is an error then...
-    console.error(`👎 ${description}`);
-    console.error(error);
-  }
-}
-
 test("correct sum", () => {
   const result = sum(5, 20);
   const expected = 25;
@@ -43,13 +31,3 @@ test("correct subtraction", () => {
   // This will not throw an error because -15 equals -15.
   expect(result).toEqual(expected);
 });
-
-function expect(actual) {
-  return {
-    toEqual(expected) {
-      if (actual !== expected) {
-        throw new Error(`${actual} does not equal ${expected}`);
-      }
-    },
-  };
-}
