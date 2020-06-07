@@ -18,9 +18,9 @@ function subtract(numA, numB) {
   return numA - numB
 }
 
-function test(description, callback) {
+async function test(description, callback) {
   try {
-    callback();
+    await callback();
     // this line executes if the callback didn't throw an error
     console.log(`👍 ${description}`);
   } catch (error) {
