@@ -22,5 +22,7 @@ function expect(actual) {
   };
 }
 
+/*--------------------------------- Exports ---------------------------------*/
+
 global.test = test
 global.expect = expect
