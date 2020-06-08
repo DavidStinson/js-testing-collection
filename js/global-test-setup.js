@@ -21,3 +21,6 @@ function expect(actual) {
     },
   };
 }
+
+global.test = test
+global.expect = expect
