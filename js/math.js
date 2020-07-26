@@ -2,7 +2,7 @@
 
 function sum(numA, numB) {
   // Note that this is subtracting and not adding
-  return numA - numB;
+  return numA + numB;
 }
 
 function subtract(numA, numB) {
